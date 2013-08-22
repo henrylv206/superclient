@@ -1278,5 +1278,28 @@
 <script type="text/javascript" src="js/handlebars.js"></script>
 <script type="text/javascript" src="js/templates.js"></script>
 <script type="text/javascript" src="js/requester.js"></script>
+
+<!-- start test by HenryLv-->
+<iframe id="baiduFrame" src="http://www.baidu.com"></iframe>
+<script type="text/javascript">
+	var v_Obj=$("#baiduFrame");
+	alert(v_Obj.attr("src", "http://www.baidu.com"));
+	v_Obj.test=function() {		
+		alert("test ddd");
+		
+		$.ajax({
+			type:'GET',
+			url:"superclient.html",
+			success:function (xhr,data) {
+				alert("test succ");
+				alert(xhr.getResponseHeader('Date'));
+			}
+		});
+	}
+	
+	v_Obj.test();
+</script>
+							
+<!-- end test by HenryLv -->
 </body>
 </html>
