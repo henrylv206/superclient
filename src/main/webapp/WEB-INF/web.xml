@@ -7,6 +7,6 @@
   
   <!-- SuperClient - REST Client -->
   <welcome-file-list>
-  	<welcome-file>rest.html</welcome-file>
+  	<welcome-file>superclient.html</welcome-file>
   </welcome-file-list>
 </web-app>
