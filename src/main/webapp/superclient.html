@@ -1280,24 +1280,29 @@
 <script type="text/javascript" src="js/requester.js"></script>
 
 <!-- start test by HenryLv-->
-<iframe id="baiduFrame" src="http://www.baidu.com"></iframe>
+<iframe id="baiduFrame" src=""></iframe>
 <script type="text/javascript">
+
 	var v_Obj=$("#baiduFrame");
-	alert(v_Obj.attr("src", "http://www.baidu.com"));
-	v_Obj.test=function() {		
+	/* v_Obj.attr("src", "http://www.baidu.com");
+	
+	
+	v_Obj.bind("load", function() {		
 		alert("test ddd");
 		
 		$.ajax({
 			type:'GET',
-			url:"superclient.html",
+			url:"http://www.baidu.com",
 			success:function (xhr,data) {
 				alert("test succ");
-				alert(xhr.getResponseHeader('Date'));
+				//alert(xhr.getResponseHeader('Date'));
 			}
 		});
-	}
+	}); */
+	//v_Obj.test();
 	
-	v_Obj.test();
+	v_Obj.load("https://code.google.com/p/google-api-javascript-client/wiki/CORS"); 
+	
 </script>
 							
 <!-- end test by HenryLv -->
